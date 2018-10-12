@@ -19,5 +19,6 @@ suite("Credential", () => {
         assert.equal(credentials.serverURL, "http://localhost/");
         assert.equal(credentials.user, "user");
         assert.equal(credentials.password, undefined);
+        assert.equal(true, false);
     });
 });
