@@ -50,7 +50,7 @@ function setupServer(done: any): void {
             Assert.notEqual(req.headers["user-agent"].indexOf("TeamCity Integration"), -1, "User " +
                 "agent header should contain a corresponding string");
             if (Math.random() < 0.5) {
-                done();
+                done("I am broken");
             } else {
                 done("I am flaky.");
             }
