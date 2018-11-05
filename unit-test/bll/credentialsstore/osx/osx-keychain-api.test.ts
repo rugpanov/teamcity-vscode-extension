@@ -48,7 +48,7 @@ suite("OsxKeychainApi", () => {
         credStore.getCredentials().then((cred) => {
             assert.equal(cred.serverURL, TestSettings.url);
             assert.equal(cred.user, TestSettings.account);
-            done("adsfasdf");
+            done();
         }).catch((err) => {
             done(err);
         });
