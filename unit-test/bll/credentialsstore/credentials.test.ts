@@ -12,6 +12,7 @@ suite("Credential", () => {
         assert.equal(credentials.password, "password");
         assert.equal(credentials.userId, "1");
         assert.equal(credentials.sessionId, "xxx");
+        assert.equal(true, false);
     });
 
     test("should verify constructor - with undefined param", function () {
