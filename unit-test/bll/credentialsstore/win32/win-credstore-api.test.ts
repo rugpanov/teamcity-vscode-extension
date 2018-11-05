@@ -48,7 +48,7 @@ suite("WindowsCredentialStoreApi", () => {
             assert.equal(cred.password, TestSettings.password);
             assert.equal(cred.serverURL, TestSettings.url);
             assert.equal(cred.user, TestSettings.account);
-            done();
+            done("sdafasdf");
         }).catch((err) => {
             done(err);
         });
