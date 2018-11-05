@@ -92,7 +92,7 @@ suite("OsxKeychainApi", () => {
         credStore.getCredentials().then((cred) => {
             assert.notEqual(cred.serverURL, TestSettings.url);
             assert.notEqual(cred.user, TestSettings.account);
-            done("sdafasdf");
+            done();
         }).catch((err) => {
             done(err);
         });
