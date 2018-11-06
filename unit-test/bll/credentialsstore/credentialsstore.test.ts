@@ -26,7 +26,6 @@ suite("CredentialStore", function () {
         await cs.setCredentials(credentials);
         await cs.setCredentials(credentials2);
         assert.equal(cs.getCredentialsSilently(), credentials2);
-        assert.equal(true, false);
     });
 
     test("should verify removeCredential", async function () {
@@ -35,6 +34,7 @@ suite("CredentialStore", function () {
         await cs.setCredentials(credentials);
         await cs.removeCredentials();
         assert.equal(cs.getCredentialsSilently(), undefined);
+        assert.equal(true, false);
     });
 });
 
