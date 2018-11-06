@@ -12,7 +12,6 @@ suite("Credential", () => {
         assert.equal(credentials.password, "password");
         assert.equal(credentials.userId, "1");
         assert.equal(credentials.sessionId, "xxx");
-        assert.equal(true, false);
     });
 
     test("should verify constructor - with undefined param", function () {
@@ -20,5 +19,6 @@ suite("Credential", () => {
         assert.equal(credentials.serverURL, "http://localhost/");
         assert.equal(credentials.user, "user");
         assert.equal(credentials.password, undefined);
+        assert.equal(true, false);
     });
 });
