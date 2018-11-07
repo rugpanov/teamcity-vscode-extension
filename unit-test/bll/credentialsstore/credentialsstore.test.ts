@@ -26,6 +26,9 @@ suite("CredentialStore", function () {
         await cs.setCredentials(credentials);
         await cs.setCredentials(credentials2);
         assert.equal(cs.getCredentialsSilently(), credentials2);
+        if (Math.random() < 0.5) {
+            assert.equal(true, false);
+        }
     });
 
     test("should verify removeCredential", async function () {
