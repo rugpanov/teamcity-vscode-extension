@@ -10,7 +10,7 @@ suite("CredentialStore", function () {
     test("should verify constructor", function () {
         const cs: InMemoryCredentialsStore = getImMemoryStorage();
         assert.equal(cs.getCredentialsSilently(), undefined);
-        assert.equal(true, true);
+        assert.equal(true, false);
     });
 
     test("should verify set/getCredential", async function () {
