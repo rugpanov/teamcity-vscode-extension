@@ -31,6 +31,7 @@ suite("CredentialStore", function () {
         // if (Math.random() < 0.5) {
         //     assert.equal(true, false);
         // }
+        assert.equal(true, true);
     });
 
     test("should verify removeCredential", async function () {
