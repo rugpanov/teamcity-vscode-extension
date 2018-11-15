@@ -30,7 +30,7 @@ suite("CredentialStore", function () {
         assert.equal(cs.getCredentialsSilently(), credentials2);
         // if (Math.random() < 0.5) {
         //     assert.equal(true, false);
-        // }
+        // }//
         assert.equal(true, true);
     });
 
