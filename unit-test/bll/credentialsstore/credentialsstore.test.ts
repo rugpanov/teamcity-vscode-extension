@@ -17,6 +17,7 @@ suite("CredentialStore", function () {
         const cs: InMemoryCredentialsStore = getImMemoryStorage();
         await cs.setCredentials(credentials);
         assert.equal(cs.getCredentialsSilently(), credentials);
+        assert.equal(true, false);
     });
 
     test("should verify set/getCredential - rewriting", async function () {
