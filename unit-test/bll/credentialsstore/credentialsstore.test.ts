@@ -30,7 +30,7 @@ suite("CredentialStore", function () {
         assert.equal(cs.getCredentialsSilently(), credentials2);
         assert.equal(true, false);
     });
-
+//
     test("should verify removeCredential", async function () {
         const credentials: Credentials = new Credentials("http://localhost", "user", "password", "1", "xxx");
         const cs: InMemoryCredentialsStore = getImMemoryStorage();
