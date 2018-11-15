@@ -12,7 +12,7 @@ suite("CredentialStore", function () {
         assert.equal(cs.getCredentialsSilently(), undefined);
         assert.equal(true, true);
     });
-//
+////
     test("should verify set/getCredential", async function () {
         const credentials: Credentials = new Credentials("http://localhost:8239", "user", "password", "1", "xxx");
         const cs: InMemoryCredentialsStore = getImMemoryStorage();
