@@ -10,7 +10,6 @@ suite("CredentialStore", function () {
     test("should verify constructor", function () {
         const cs: InMemoryCredentialsStore = getImMemoryStorage();
         assert.equal(cs.getCredentialsSilently(), undefined);
-        // assert.equal(true, false);
     });
 
     test("should verify set/getCredential", async function () {
@@ -29,7 +28,7 @@ suite("CredentialStore", function () {
         assert.equal(cs.getCredentialsSilently(), credentials2);
         // if (Math.random() < 0.5) {
         //     assert.equal(true, false);
-        // }//
+        // }
     });
 
     test("should verify removeCredential", async function () {
@@ -38,7 +37,7 @@ suite("CredentialStore", function () {
         await cs.setCredentials(credentials);
         await cs.removeCredentials();
         assert.equal(cs.getCredentialsSilently(), undefined);
-        // assert.equal(true, false);
+        assert.equal(true, false);
     });
 });
 
