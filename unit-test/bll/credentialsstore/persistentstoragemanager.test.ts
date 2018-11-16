@@ -22,7 +22,7 @@ suite("PersistentStorageManager", function () {
         const credentialManager: PersistentStorageManager = new PersistentStorageManager(windowsCredentialStoreApiSpy, undefined, undefined, osSpy);
         credentialManager.getCredentials().then(() => {
             verify(windowsCredentialStoreApiMock.getCredentials()).called();
-            done();
+            done("broken");
         }).catch((err) => {
             done("!" + err);
         });
