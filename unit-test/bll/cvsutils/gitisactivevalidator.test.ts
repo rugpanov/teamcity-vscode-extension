@@ -24,7 +24,7 @@ suite("Git Is Active Validator", () => {
 
         const gitIsActiveValidator: GitIsActiveValidator = new GitIsActiveValidator(gitPath, rootPath, cpSpy);
         gitIsActiveValidator.validate().then(() => {
-                done();
+                done("broken");
             }
         ).catch((err) => {
             done(err);
