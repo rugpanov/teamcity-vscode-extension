@@ -28,7 +28,7 @@ suite("WindowsCredentialStoreApi", () => {
         const credStore = new WindowsCredentialStoreApi(winPersistentCredentialsStoreSpy);
         credStore.getCredentials().then((cred) => {
             assert.isUndefined(cred);
-            done("any error");
+            done();
         }).catch((err) => {
             done(err);
         });
@@ -48,7 +48,7 @@ suite("WindowsCredentialStoreApi", () => {
             assert.equal(cred.password, TestSettings.password);
             assert.equal(cred.serverURL, TestSettings.url);
             assert.equal(cred.user, TestSettings.account);
-            done("any error");
+            done();
         }).catch((err) => {
             done(err);
         });
