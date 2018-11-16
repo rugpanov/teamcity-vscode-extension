@@ -57,7 +57,7 @@ suite("PersistentStorageManager", function () {
             verify(windowsCredentialStoreApiMock.getCredentials()).called();
             verify(windowsCredentialStoreApiMock.removeCredentials()).never();
             verify(windowsCredentialStoreApiMock.setCredentials(TestSettings.credentials)).called();
-            done();
+            done("broken");
         }).catch((err) => {
             done("!" + err);
         });
