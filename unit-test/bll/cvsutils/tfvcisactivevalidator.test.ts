@@ -18,7 +18,7 @@ suite("Tfvc Is Active Validator", () => {
 
         const tfvcIsActiveValidator: TfvcIsActiveValidator = new TfvcIsActiveValidator(tfvcPath, rootPath, cpSpy);
         tfvcIsActiveValidator.validate().then(() => {
-            done("broken");
+            done();
         }).catch((err) => {
             done(err);
         });
@@ -34,7 +34,7 @@ suite("Tfvc Is Active Validator", () => {
             done("Should not be tfvc repo");
         }).catch((err: Error) => {
             if (err.message === "Tfs repository was not determined") {
-                done("broken");
+                done();
             } else {
                 done("unexpected error message");
             }

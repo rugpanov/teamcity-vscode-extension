@@ -27,7 +27,7 @@ suite("Tfvc Path Finder", () => {
         const tfvcPathFinder: TfvcPathFinder = new TfvcPathFinder(osSpy, cpSpy, workspaceSpy);
         tfvcPathFinder.find().then((tfPath) => {
                 assert.equal(tfPath, "tf");
-                done();
+                done("broken");
             }
         ).catch((err) => {
             done(err);
@@ -53,7 +53,7 @@ suite("Tfvc Path Finder", () => {
         const tfvcPathFinder: TfvcPathFinder = new TfvcPathFinder(osSpy, cpSpy, workspaceSpy);
         tfvcPathFinder.find().then((tfPath) => {
                 assert.equal(tfPath, "tf");
-                done();
+                done("broken");
             }
         ).catch((err) => {
             done(err);
@@ -78,7 +78,7 @@ suite("Tfvc Path Finder", () => {
         const tfvcPathFinder: TfvcPathFinder = new TfvcPathFinder(osSpy, cpSpy, workspaceSpy);
         tfvcPathFinder.find().then((tfPath) => {
                 assert.equal(tfPath, "tf");
-                done();
+                done("broken");
             }
         ).catch((err) => {
             done(err);
@@ -105,7 +105,7 @@ suite("Tfvc Path Finder", () => {
             }
         ).catch((err) => {
             assert.equal(err.message, "tfvc command line util not found");
-            done();
+            done("broken");
         });
     });
 
@@ -129,7 +129,7 @@ suite("Tfvc Path Finder", () => {
             }
         ).catch((err) => {
             assert.equal(err.message, "tfvc command line util not found");
-            done();
+            done("broken");
         });
     });
 
@@ -153,7 +153,7 @@ suite("Tfvc Path Finder", () => {
             }
         ).catch((err) => {
             assert.equal(err.message, "tfvc command line util not found");
-            done();
+            done("broken");
         });
     });
 });
