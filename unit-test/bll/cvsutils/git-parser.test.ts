@@ -11,7 +11,7 @@ suite("GitParser", () => {
             const result = GitParser.parseStatusRow(testString);
             done(result);
         } catch (err) {
-            done();
+            done("broken");
         }
     });
 
@@ -28,7 +28,7 @@ suite("GitParser", () => {
             const result = GitParser.parseReplacedPath(testString);
             done(result);
         } catch (err) {
-            done();
+            done("broken");
         }
     });
 
