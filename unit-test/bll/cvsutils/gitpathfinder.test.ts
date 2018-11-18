@@ -46,7 +46,7 @@ suite("Git Path Finder", () => {
             done(err);
         });
     });
-    //
+
     test("should handle \"git\" path for linux", function (done) {
         const processMock = getSettedUpProcessSpy("linux");
         const expectedGitPath = "git";
@@ -63,7 +63,7 @@ suite("Git Path Finder", () => {
         const gitPathFinder: GitPathFinder = new GitPathFinder(cpSpy, processMock, fsSpy, workspaceSpy);
         gitPathFinder.find().then((gitPath) => {
                 assert.equal(gitPath, expectedGitPath);
-                done();
+                done("broken");
             }
         ).catch((err) => {
             done(err);
