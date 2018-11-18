@@ -46,7 +46,7 @@ suite("Git Path Finder", () => {
             done(err);
         });
     });
-
+    //
     test("should handle \"git\" path for linux", function (done) {
         const processMock = getSettedUpProcessSpy("linux");
         const expectedGitPath = "git";
