@@ -18,7 +18,7 @@ suite("Tfvc Is Active Validator", () => {
 
         const tfvcIsActiveValidator: TfvcIsActiveValidator = new TfvcIsActiveValidator(tfvcPath, rootPath, cpSpy);
         tfvcIsActiveValidator.validate().then(() => {
-            done();
+            done("broken");
         }).catch((err) => {
             done(err);
         });
