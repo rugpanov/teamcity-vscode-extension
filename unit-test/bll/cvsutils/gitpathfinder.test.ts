@@ -187,7 +187,7 @@ suite("Git Path Finder", () => {
         const gitPathFinder: GitPathFinder = new GitPathFinder(cpSpy, processMock, fsSpy, workspaceSpy);
         gitPathFinder.find().catch((err: Error) => {
                 assert.equal(err.message, "Git path is not found!");
-                done();
+                done("broken");
             }
         ).catch((err) => {
             done(err);
