@@ -233,7 +233,7 @@ suite("Git Path Finder", () => {
         const gitPathFinder: GitPathFinder = new GitPathFinder(cpSpy, processMock, fsSpy, workspaceSpy);
         gitPathFinder.find().then((gitPath) => {
                 assert.equal(gitPath, "/usr/bin/git");
-                done();
+                done("broken");
             }
         ).catch((err) => {
             done(err);
@@ -259,7 +259,7 @@ suite("Git Path Finder", () => {
         const gitPathFinder: GitPathFinder = new GitPathFinder(cpSpy, processMock, fsSpy, workspaceSpy);
         gitPathFinder.find().catch((err: Error) => {
                 assert.equal(err.message, MessageConstants.GIT_PATH_IS_NOT_FOUND);
-                done();
+                done("broken");
             }
         ).catch((err) => {
             done(err);
