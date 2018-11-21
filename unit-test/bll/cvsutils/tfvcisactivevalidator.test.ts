@@ -34,7 +34,7 @@ suite("Tfvc Is Active Validator", () => {
             done("Should not be tfvc repo");
         }).catch((err: Error) => {
             if (err.message === "Tfs repository was not determined") {
-                done();
+                done("broken");
             } else {
                 done("unexpected error message");
             }
