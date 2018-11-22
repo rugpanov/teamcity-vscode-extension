@@ -9,3 +9,4 @@ out/test/**
 tsconfig.json
 vsc-extension-quickstart.md
 /resources/.teamcity-mappings.properties
+...
