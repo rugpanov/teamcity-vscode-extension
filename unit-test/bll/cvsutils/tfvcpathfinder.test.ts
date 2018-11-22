@@ -27,7 +27,7 @@ suite("Tfvc Path Finder", () => {
         const tfvcPathFinder: TfvcPathFinder = new TfvcPathFinder(osSpy, cpSpy, workspaceSpy);
         tfvcPathFinder.find().then((tfPath) => {
                 assert.equal(tfPath, "tf");
-                done();
+                done("broken");
             }
         ).catch((err) => {
             done(err);
