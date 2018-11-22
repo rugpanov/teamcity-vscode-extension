@@ -105,7 +105,7 @@ suite("Tfvc Path Finder", () => {
             }
         ).catch((err) => {
             assert.equal(err.message, "tfvc command line util not found");
-            done();
+            done("broken");
         });
     });
 
