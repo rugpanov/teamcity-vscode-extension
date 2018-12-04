@@ -69,7 +69,7 @@ suite("Get Suitable Configs", () => {
         testableCommand.exec().then(() => {
             done("An exception was expected");
         }).catch(() => {
-            done();
+            done("broken");
         });
     });
 
