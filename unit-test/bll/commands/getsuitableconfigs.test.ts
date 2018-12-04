@@ -128,7 +128,7 @@ suite("Get Suitable Configs", () => {
         const testableCommand = new GetSuitableConfigs(providerProxySpy, resourceProviderSpy, buildProviderSpy, remoteBuildServerSpy, xmlParserSpy, outputSpy);
         testableCommand.exec().then(() => {
             buildProviderMock.verify((foo) => foo.setContent(TypeMoq.It.isAny()), TypeMoq.Times.atLeastOnce());
-            done();
+            done("broken");
         }).catch((err) => {
             done("There is no reason for error: " + err);
         });
