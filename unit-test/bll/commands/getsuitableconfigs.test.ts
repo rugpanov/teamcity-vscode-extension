@@ -39,7 +39,7 @@ suite("Get Suitable Configs", () => {
         const testableCommand = new GetSuitableConfigs(providerProxySpy, resourceProviderSpy, buildProviderSpy, remoteBuildServerSpy, xmlParserSpy, outputSpy);
         testableCommand.exec().then(() => {
             resourceProviderMock.verify((bar) => bar.getSelectedContent(), TypeMoq.Times.atLeastOnce());
-            done();
+            done("broken");
         }).catch((err) => {
             done("There is no reason for error: " + err);
         });
