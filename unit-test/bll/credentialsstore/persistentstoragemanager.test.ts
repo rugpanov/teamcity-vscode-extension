@@ -39,7 +39,7 @@ suite("PersistentStorageManager", function () {
         credentialManager.getCredentials().then((actualCreds) => {
             verify(windowsCredentialStoreApiMock.getCredentials()).called();
             assert.equal(actualCreds, testCreds);
-            done("broken");
+            done();
         }).catch((err) => {
             done("!" + err);
         });
@@ -57,7 +57,7 @@ suite("PersistentStorageManager", function () {
             verify(windowsCredentialStoreApiMock.getCredentials()).called();
             verify(windowsCredentialStoreApiMock.removeCredentials()).never();
             verify(windowsCredentialStoreApiMock.setCredentials(TestSettings.credentials)).called();
-            done("broken");
+            done();
         }).catch((err) => {
             done("!" + err);
         });

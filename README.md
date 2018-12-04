@@ -86,5 +86,3 @@ or participate in [discussions](https://github.com/rugpanov/teamcity-vscode-exte
 
 ## License
 This extension is [licensed under the MIT License](LICENSE.txt).
-
-## New One
